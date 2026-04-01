@@ -50,6 +50,18 @@ const paginate = (products) => {
         });
     };
 
+    const renderPagination = (products, numOfProd) => {
+        const pageCount = Math.ceil(products.length / numOfProd);
+
+        const ul = document.querySelector('.js-pagination-list');
+        for (let i = 0; i < pageCount; i++) {
+            const li = renderBtn(i);
+            ul.append(li);
+        }
+
+        pagination.classList.remove('hidden')
+    }
+
     const renderBtn = (page) => { 
         const li = document.createElement('li');
         li.classList.add('pagination-item', 'row', 'jcc', 'aic');
@@ -61,20 +73,6 @@ const paginate = (products) => {
 
         return li;
     }
-
-    const renderPagination = (products, numOfProd) => {
-        const pageCount = Math.ceil(products.length / numOfProd);
-
-        const ul = document.querySelector('.js-pagination-list');
-        for (let i = 0; i < pageCount.length; i++) {
-            const li = renderBtn(i);
-            ul.append(li);
-        }
-
-        pagination.classList.remove('hidden')
-    }
-
-    
 
     const updatePagination = () => {
         pagination.addEventListener('click', (e) => {
