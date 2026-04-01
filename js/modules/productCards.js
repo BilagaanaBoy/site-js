@@ -8,7 +8,7 @@ const appendProductCard = (product, container) => {
     container.append(product);
 }
 
-const renderProductCards = (products, productContainer) => {
+const renderProductCards = (products, container) => {
 
     products.forEach((e) => {
         const card = renderProductCard(e);
