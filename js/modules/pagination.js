@@ -53,10 +53,29 @@ const paginate = (products) => {
     const renderPagination = (products, numOfProd) => {
         const pageCount = Math.ceil(products.length / numOfProd);
 
+        const ul = document.querySelector('.js-pagination-list');
+        for (let i = 0; i < pageCount.length; i++) {
+            const li = renderBtn(i);
+            ul.append(li);
+        }
         pagination.classList.remove('hidden')
     }
+
+    const renderBtn = (page) => { 
+        const li = document.createElement('li');
+        li.classList.add('pagination-item', 'row', 'jcc', 'aic');
+        li.textContent = page;
+
+        if(currentPage === page) {
+            li.classList.add('active');
+        }
+
+        return li;
+    }
+    
     renderProduct(products, productContainer, productCount, productPage);
 };
+
 
 export {
     paginate
