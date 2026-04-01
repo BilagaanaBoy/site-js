@@ -67,6 +67,108 @@ const products = [
         maximumFlightTime: "31 мин",
         info: "DJI Air 2S с 1-дюймовой CMOS-матрицей, мощным арсеналом функций, компактным корпусом и массой менее 600 г — идеальный дрон для аэрофотосъемки в любом месте и в любое время. Возьмите этот универсальный дрон с собой, чтобы запечатлеть мир в потрясающих деталях."
     },
+    {
+        id: "5",
+        category: "quadcopter",
+        series: "Air",
+        model: "DJI AIR 2S",
+        prices: [
+            "500",
+            "600"
+        ],
+        photo: [
+            "quadcopters/quadcopter0002-front-view.jpg",
+            "quadcopters/quadcopter0002-above-view.jpg",
+            "quadcopters/quadcopter0002-folded-view.jpg",
+        ],
+        maximumFlightTime: "31 мин",
+        info: "DJI Air 2S с 1-дюймовой CMOS-матрицей, мощным арсеналом функций, компактным корпусом и массой менее 600 г — идеальный дрон для аэрофотосъемки в любом месте и в любое время. Возьмите этот универсальный дрон с собой, чтобы запечатлеть мир в потрясающих деталях."
+    },
+    {
+        id: "6",
+        category: "quadcopter",
+        series: "Air",
+        model: "DJI AIR 2S",
+        prices: [
+            "500",
+            "600"
+        ],
+        photo: [
+            "quadcopters/quadcopter0002-front-view.jpg",
+            "quadcopters/quadcopter0002-above-view.jpg",
+            "quadcopters/quadcopter0002-folded-view.jpg",
+        ],
+        maximumFlightTime: "31 мин",
+        info: "DJI Air 2S с 1-дюймовой CMOS-матрицей, мощным арсеналом функций, компактным корпусом и массой менее 600 г — идеальный дрон для аэрофотосъемки в любом месте и в любое время. Возьмите этот универсальный дрон с собой, чтобы запечатлеть мир в потрясающих деталях."
+    },
+    {
+        id: "7",
+        category: "quadcopter",
+        series: "Air",
+        model: "DJI AIR 2S",
+        prices: [
+            "500",
+            "600"
+        ],
+        photo: [
+            "quadcopters/quadcopter0002-front-view.jpg",
+            "quadcopters/quadcopter0002-above-view.jpg",
+            "quadcopters/quadcopter0002-folded-view.jpg",
+        ],
+        maximumFlightTime: "31 мин",
+        info: "DJI Air 2S с 1-дюймовой CMOS-матрицей, мощным арсеналом функций, компактным корпусом и массой менее 600 г — идеальный дрон для аэрофотосъемки в любом месте и в любое время. Возьмите этот универсальный дрон с собой, чтобы запечатлеть мир в потрясающих деталях."
+    },
+    {
+        id: "8",
+        category: "quadcopter",
+        series: "Air",
+        model: "DJI AIR 2S",
+        prices: [
+            "500",
+            "600"
+        ],
+        photo: [
+            "quadcopters/quadcopter0002-front-view.jpg",
+            "quadcopters/quadcopter0002-above-view.jpg",
+            "quadcopters/quadcopter0002-folded-view.jpg",
+        ],
+        maximumFlightTime: "31 мин",
+        info: "DJI Air 2S с 1-дюймовой CMOS-матрицей, мощным арсеналом функций, компактным корпусом и массой менее 600 г — идеальный дрон для аэрофотосъемки в любом месте и в любое время. Возьмите этот универсальный дрон с собой, чтобы запечатлеть мир в потрясающих деталях."
+    },
+    {
+        id: "9",
+        category: "quadcopter",
+        series: "Air",
+        model: "DJI AIR 2S",
+        prices: [
+            "500",
+            "600"
+        ],
+        photo: [
+            "quadcopters/quadcopter0002-front-view.jpg",
+            "quadcopters/quadcopter0002-above-view.jpg",
+            "quadcopters/quadcopter0002-folded-view.jpg",
+        ],
+        maximumFlightTime: "31 мин",
+        info: "DJI Air 2S с 1-дюймовой CMOS-матрицей, мощным арсеналом функций, компактным корпусом и массой менее 600 г — идеальный дрон для аэрофотосъемки в любом месте и в любое время. Возьмите этот универсальный дрон с собой, чтобы запечатлеть мир в потрясающих деталях."
+    },
+    {
+        id: "10",
+        category: "quadcopter",
+        series: "Air",
+        model: "DJI AIR 2S",
+        prices: [
+            "500",
+            "600"
+        ],
+        photo: [
+            "quadcopters/quadcopter0002-front-view.jpg",
+            "quadcopters/quadcopter0002-above-view.jpg",
+            "quadcopters/quadcopter0002-folded-view.jpg",
+        ],
+        maximumFlightTime: "31 мин",
+        info: "DJI Air 2S с 1-дюймовой CMOS-матрицей, мощным арсеналом функций, компактным корпусом и массой менее 600 г — идеальный дрон для аэрофотосъемки в любом месте и в любое время. Возьмите этот универсальный дрон с собой, чтобы запечатлеть мир в потрясающих деталях."
+    },
 
 ];  
 

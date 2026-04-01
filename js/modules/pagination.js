@@ -1,5 +1,5 @@
 const paginate = (products) => {
-    let productCount = 2;
+    let productCount = 7;
     let productPage = 1;
 
     const productContainer = document.querySelector('.js-pagination-list');
@@ -10,16 +10,16 @@ const paginate = (products) => {
     const renderProduct = (products, container, numOfProd, page) => {
         productContainer.innerHTML = "";
 
-        const firstP = numOfProd * page - numOfProd;
-        console.log('firstP ', firstP)
+        const firstProduct = numOfProd * page - numOfProd;
+        console.log('firstProduct ', firstProduct)
 
-        const lastP = firstP + numOfProd;
-        console.log('lastP ', lastP)
+        const lastProduct = firstProduct + numOfProd;
+        console.log('lastProduct ', lastProduct)
 
-        const pOnPage = products.slice(firstP, lastP);
-        console.log('pOnPage ', pOnPage)
+        const productOnPage = products.slice(firstProduct, lastProduct);
+        console.log('productOnPage ', productOnPage)
 
-        pOnPage.forEach(({id, photo, model, prices}) => {
+        productOnPage.forEach(({id, photo, model, prices}) => {
             const li = document.createElement('li');
             li.classList.add('product', 'item', 'column', 'aic', 'js-product');
             li.innerHTML =  `
@@ -55,4 +55,4 @@ const paginate = (products) => {
 
 export {
     paginate
-}
+};

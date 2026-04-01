@@ -23,7 +23,7 @@ const renderProductCard = ({id, photo, model, prices}) => {
             <span class="price js-price-card">${prices[0]}</span><span>₽</span>
         </div>       
     </a>
-    <button type="button" class="addCart buy-button js-buy-button">В корзину</button>`
+    <button type="button" class="addCart buy-button js-buy-button">В корзину</button>`;
 
     return li;
 }
