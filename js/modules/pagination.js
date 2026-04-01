@@ -1,5 +1,5 @@
 const paginate = (products) => {
-    let productCount = 7;
+    let productCount = 4;
     let currentPage = 1;
 
     const productContainer = document.querySelector('.js-products-list');
@@ -58,6 +58,7 @@ const paginate = (products) => {
             const li = renderBtn(i);
             ul.append(li);
         }
+
         pagination.classList.remove('hidden')
     }
 
@@ -72,8 +73,59 @@ const paginate = (products) => {
 
         return li;
     }
+
+    const updatePagination = () => {
+        pagination.addEventListener('click', (e) => {
+            if(!e.target.closest('.pagination-item')) {
+                return
+            } else {
+                currentPage = e.target.textContent;
+                renderProduct(products, productContainer, productCount, currentPage);
+                let currLi = document.querySelector('.pagination-item.active')
+                currLi.classList.remove('active')
+                e.target.classList.add('active')
+            }
+        });
+    }
     
     renderProduct(products, productContainer, productCount, currentPage);
+    renderPagination(products, productCount);
+    updatePagination();
+
+    const liElements = documents.querySelectorAll('.pagination-item')
+
+    const handlePagination = (e) => { 
+        const currActiveLi = document.querySelector('.pagination-item.active')
+        let newActiveLi;
+
+        if (e.target.closest('.js-pagination-btn-next')) {
+            newActiveLi = currActiveLi.nextElementSibling;
+            currentPage++;
+        } else {
+            newActiveLi = currActiveLi.previousElementSibling;
+            currentPage--;
+        }
+
+        if(!newActiveLi && e.target.closest('.js-pagination-btn-next')){
+            newActiveLi = liElements[0];
+        } else if (!newActiveLi) {
+            newActiveLi = liElements[liElements.length - 1];
+        }
+
+        currActiveLi.classList.remove('active');
+        newActiveLi.classList.add('active');
+
+        if(currentPage > liElements.length) {
+            currentPage = 1;
+        } else if (currentPage < 1) {
+            currentPage = liElements.length;
+        }
+
+        renderProduct(products, productContainer, productCount, currentPage);
+    }
+
+    btnPrev.addEventListener('click', handlePagination)
+    btnNext.addEventListener('click', handlePagination)
 };
 
 
