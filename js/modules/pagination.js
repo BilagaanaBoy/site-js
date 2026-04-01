@@ -2,7 +2,7 @@ const paginate = (products) => {
     let productCount = 7;
     let productPage = 1;
 
-    const productContainer = document.querySelector('.js-pagination-list');
+    const productContainer = document.querySelector('.js-products-list');
     const pagination = document.querySelector('.js-pagination');
     const btnPrev = document.querySelector('.pagination-btn-prev');
     const btnNext = document.querySelector('.pagination-btn-next');
