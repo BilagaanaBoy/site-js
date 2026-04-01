@@ -50,6 +50,18 @@ const paginate = (products) => {
         });
     };
 
+    const renderBtn = (page) => { 
+        const li = document.createElement('li');
+        li.classList.add('pagination-item', 'row', 'jcc', 'aic');
+        li.textContent = page;
+
+        if(currentPage === page) {
+            li.classList.add('active');
+        }
+
+        return li;
+    }
+
     const renderPagination = (products, numOfProd) => {
         const pageCount = Math.ceil(products.length / numOfProd);
 
@@ -62,17 +74,7 @@ const paginate = (products) => {
         pagination.classList.remove('hidden')
     }
 
-    const renderBtn = (page) => { 
-        const li = document.createElement('li');
-        li.classList.add('pagination-item', 'row', 'jcc', 'aic');
-        li.textContent = page;
-
-        if(currentPage === page) {
-            li.classList.add('active');
-        }
-
-        return li;
-    }
+    
 
     const updatePagination = () => {
         pagination.addEventListener('click', (e) => {
