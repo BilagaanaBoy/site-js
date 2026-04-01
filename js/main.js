@@ -1,6 +1,6 @@
 import products from './products.js';
 import { renderProductCards } from './modules/productCards.js';
-// import { paginate } from './modules/pagination.js';
+import { paginate } from './modules/pagination.js';
 // import { closeCart, openCart } from './modules/cartPopup.js';
 // import { cartData } from './modules/cartData.js';
 // import { renderInitialProducts } from './modules/renderInitialProducts.js';
@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // let lastProductIndex = 8; // Это количество продуктов до нажатия на кнопку Показать еще
 
     renderProductCards(products, productContainer);
-    // paginate(products);
+    paginate(products);
     // openCart();
     // closeCart();
     // cartData();
