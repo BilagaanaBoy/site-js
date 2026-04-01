@@ -19,7 +19,7 @@ const paginate = (products) => {
         const pOnPage = products.slice(firstP, lastP);
         console.log('pOnPage ', pOnPage)
 
-        productOnPage.forEach(({id, photo, model, prices}) => {
+        pOnPage.forEach(({id, photo, model, prices}) => {
             const li = document.createElement('li');
             li.classList.add('product', 'item', 'column', 'aic', 'js-product');
             li.innerHTML =  `
