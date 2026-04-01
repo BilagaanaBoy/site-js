@@ -33,7 +33,6 @@ const appendProductCard = (product, container) => {
 }
 
 const renderProductCards = (products, container) => {
-
     products.forEach((e) => {
         const card = renderProductCard(e);
         

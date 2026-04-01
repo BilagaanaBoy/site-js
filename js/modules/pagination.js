@@ -50,6 +50,11 @@ const paginate = (products) => {
         });
     };
 
+    const renderPagination = (products, numOfProd) => {
+        const pageCount = Math.ceil(products.length / numOfProd);
+
+        pagination.classList.remove('hidden')
+    }
     renderProduct(products, productContainer, productCount, productPage);
 };
 
