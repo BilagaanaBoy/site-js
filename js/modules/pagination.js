@@ -8,7 +8,7 @@ const paginate = (products) => {
     const btnNext = document.querySelector('.pagination-btn-next');
 
     const renderProduct = (products, container, numOfProd, page) => {
-        productContainer.innerHTML = "";
+        productContainer.innerHTML = '';
 
         const firstProduct = numOfProd * page - numOfProd;
         console.log('firstProduct ', firstProduct)
