@@ -73,7 +73,7 @@ const paginate = (products) => {
         return li;
     }
     
-    renderProduct(products, productContainer, productCount, productPage);
+    renderProduct(products, productContainer, productCount, currentPage);
 };
 
 
