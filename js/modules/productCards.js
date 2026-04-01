@@ -1,7 +1,6 @@
 const renderProductCard = ({id, photo, model, prices}) => { 
     const li = document.createElement('li');
     li.classList.add('product', 'item', 'column', 'aic', 'js-product');
-
     li.innerHTML =  `
     <div class="favorites js-favorites">
         <span class="heart-lined js-heart-lined">
