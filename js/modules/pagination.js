@@ -50,7 +50,7 @@ const paginate = (products) => {
         });
     };
 
-    renderProduct(products, productContainer, productCount, productPage)
+    renderProduct(products, productContainer, productCount, productPage);
 };
 
 export {

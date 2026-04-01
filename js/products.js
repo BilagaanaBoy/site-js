@@ -39,7 +39,7 @@ const products = [
         series: "Air",
         model: "DJI AIR 2S",
         prices: [
-            "500",
+            "400",
             "600"
         ],
         photo: [
