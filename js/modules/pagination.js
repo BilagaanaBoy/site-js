@@ -1,6 +1,6 @@
 const paginate = (products) => {
     let productCount = 7;
-    let productPage = 1;
+    let currentPage = 1;
 
     const productContainer = document.querySelector('.js-products-list');
     const pagination = document.querySelector('.js-pagination');
