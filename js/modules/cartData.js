@@ -11,6 +11,10 @@ const cartData = () => {
     const updateCartItemCount = () => { 
         cart.addEventListener('click', (e) => {
             
+            if(!e.target.matches('.js-minus, .js-plus')){
+                return;
+            }
+
             let currentItems, minusBt;
             if(e.target.matches('.js-minus') || e.target.matches('.js-plus')){
                 const counter = e.target.closest('.js-counter');
@@ -39,6 +43,9 @@ const cartData = () => {
 
     const addProductToCart = () => {
         productsList.addEventListener('click', (e) => {
+            if(!e.target.classList.contains('.js-buy-button')){
+                return;
+            }
             if(e.target.classList.contains('js-buy-button')) {
                 const product = e.target.closest('.js-product');
 
@@ -104,6 +111,9 @@ const cartData = () => {
 
     const removeProductInCart = () => {
         cartList.addEventListener('click', (e) => {
+            if(!e.target.classList.contains('.js-remove')){
+                return;
+            }
             if(e.target.classList.contains('js-remove')){
                 const cartItem = e.target.closest('.js-cart-item');
                 cartItem.remove();
