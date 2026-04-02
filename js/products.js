@@ -10,7 +10,7 @@ const products = [
     },
     {
         id: "ITEMCODE2",
-        series: "Case",
+        series: "Charger",
         model: "Силиконовый чехол - (Желтый)",
         prices: "5000",
         photo: "items/case-2-view.jpg",
