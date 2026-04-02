@@ -99,7 +99,7 @@ const products = [
 
     {
         id: "ITEMCODE13",
-        series: "Charger",
+        series: "Accessories",
         model: "Переходник для наушников",
         prices: "1000",
         photo: "items/accessories-1-view.jpg",
@@ -107,7 +107,7 @@ const products = [
     },
     {
         id: "ITEMCODE14",
-        series: "Charger",
+        series: "Accessories",
         model: "Ремешок для телефона",
         prices: "4000",
         photo: "items/accessories-2-view.jpg",
@@ -115,7 +115,7 @@ const products = [
     },
     {
         id: "ITEMCODE15",
-        series: "Charger",
+        series: "Accessories",
         model: "Картхолдер на телефон",
         prices: "3000",
         photo: "items/accessories-3-view.jpg",
@@ -123,7 +123,7 @@ const products = [
     },
     {
         id: "ITEMCODE16",
-        series: "Charger",
+        series: "Accessories",
         model: "Переходник для телефона",
         prices: "2000",
         photo: "items/accessories-4-view.jpg",
