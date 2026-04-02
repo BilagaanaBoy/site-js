@@ -18,22 +18,23 @@ const getScrollBarWidth = () => {
 
 const scroll = getScrollBarWidth();
 
+const toggleCart = (isActive) => {
+    document.body.style.overflow = isActive ? 'hidden' : '';
+    document.body.style.marginRight = isActive ? `${scroll}px` : `0px`;
+    cart.classList.toggle('active', isActive);
+    overlay.classList.toggle('active', isActive);
+}
+
 const openCart = () => { 
     openCartButton.addEventListener('click', () => {
-        document.body.style.overflow = 'hidden';
-        document.body.style.marginRight = `${scroll}px`;
-        cart.classList.add('active');
-        overlay.classList.add('active');
+        toggleCart(true);
     })
 }
 
 const closeCart = () => { 
     closeCartElements.forEach((e) => {
         e.addEventListener('click', () => {
-            document.body.style.overflow = '';
-            document.body.style.marginRight = `0px`;
-            cart.classList.remove('active');
-            overlay.classList.remove('active');
+            toggleCart(false);
         });
     });
 }
