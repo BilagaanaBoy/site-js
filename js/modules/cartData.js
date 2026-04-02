@@ -132,8 +132,8 @@ const cartData = () => {
         let totalCartValue = 0;
 
         cartItems.forEach((item) => {
-            const itemCount = document.querySelector('.js-current-items');
-            const itemPrice = document.querySelector('.js-cart-price');
+            const itemCount = item.querySelector('.js-current-items');
+            const itemPrice = item.querySelector('.js-cart-price');
             const itemTotalPrice = parseInt(itemCount.textContent) * parseInt(itemPrice.textContent)
 
             totalCartValue += itemTotalPrice;
