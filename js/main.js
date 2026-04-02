@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // let lastProductIndex = 8; // Это количество продуктов до нажатия на кнопку Показать еще
 
     renderProductCards(products, productContainer);
-    paginate(products);
+    // paginate(products);
     openCart();
     closeCart();
     cartData();
