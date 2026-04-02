@@ -98,7 +98,12 @@ const buttonsProductCard = () => {
     
     liElements.addEventListener('click', (e) => {
         console.log(e)
-        currLi.classList.remove('active')
+
+        for (let i = 0; i < currLi.length; i++) {
+            currLi[i].classList.remove('active')
+        }
+
+        // currLi.classList.remove('active')
         e.target.classList.add('active')
     })
 }
