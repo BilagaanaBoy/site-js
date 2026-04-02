@@ -6,8 +6,9 @@ const cartData = () => {
             
             let currentItems, minusBt;
             if(e.target.matches('.js-minus') || e.target.matches('.js-plus')){
-                const counter = e.target.closest('js-counter');
-                currentItems = e.target.querySelector('js-current-items');
+                const counter = e.target.closest('.js-counter');
+                currentItems = counter.querySelector('.js-current-items');
+                minusBt = counter.querySelector('.js-minus');
             }
 
             if (e.target.matches('.js-plus')) {
@@ -16,14 +17,12 @@ const cartData = () => {
             }
 
             if (e.target.matches('.js-minus')) {
-
                 if (parseInt(currentItems.textContent) > 2) {
                     currentItems.textContent = --currentItem.textContent;
                 } else if (parseInt(currentItems.textContent) === 2) {
                     currentItems.textContent = --currentItem.textContent;
                     minusBt.classList.add('disabled');
                 }
-                
             }
         })
     };
