@@ -1,3 +1,5 @@
+import products from './products.js';
+
 const renderProductCard = ({id, photo, model, prices, like, series}, value) => { 
     if (value === 'all') {
         const li = document.createElement('li');
@@ -84,9 +86,9 @@ const appendProductCard = (product, container) => {
     container.append(product);
 }
 
-const renderProductCards = (products, container) => {
+const renderProductCards = (products, container, value) => {
     products.forEach((e) => {
-        const card = renderProductCard(e, 'all');
+        const card = renderProductCard(e, value);
         
         appendProductCard(card, container);
     });
@@ -95,6 +97,7 @@ const renderProductCards = (products, container) => {
 const buttonsProductCard = () => { 
     const liElements = document.querySelector('.js-filter-series-ul')
     let currLi = document.querySelectorAll('.js-series-item')
+    let valueData = 'all';
     
     liElements.addEventListener('click', (e) => {
         console.log(e)
@@ -105,6 +108,10 @@ const buttonsProductCard = () => {
 
         // currLi.classList.remove('active')
         e.target.classList.add('active')
+        valueData = e.target.attributes[1].textContent
+
+        const productContainer = document.querySelector('.js-products-list');
+        renderProductCards(products, productContainer, valueData)
     })
 }
 buttonsProductCard();
