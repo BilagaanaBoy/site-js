@@ -24,7 +24,7 @@ const renderProductCard = ({id, photo, model, prices, like, series}, value) => {
         `;
 
         return li;
-    } else if (value == 'Like') {
+    } else if (value == 'Like' && like == '') {
         const li = document.createElement('li');
         li.classList.add('product', 'item', 'column', 'aic', 'js-product');
         li.innerHTML =  `
