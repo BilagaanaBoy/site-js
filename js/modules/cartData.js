@@ -50,7 +50,7 @@ const cartData = () => {
                 const productInCart = cartList.querySelector(`#${productInfo.id}`)
                 if (productInCart) {
                     const currentItemsProduct = productInCart.querySelector('.js-current-items');
-                    currentItemsProduct.textContent = parseInt(currentItemsProduct.textContent) + 1;\
+                    currentItemsProduct.textContent = parseInt(currentItemsProduct.textContent) + 1;
 
                     const minusBt = productInCart.querySelector('.js-minus');
                     minusBt.classList.remove('disabled');
