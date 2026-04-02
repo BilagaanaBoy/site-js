@@ -54,7 +54,7 @@ const paginate = (products) => {
         const pageCount = Math.ceil(products.length / numOfProd);
 
         const ul = document.querySelector('.js-pagination-list');
-        for (let i = 1; i < pageCount; i++) {
+        for (let i = 1; i <= pageCount; i++) {
             const li = renderBtn(i);
             ul.append(li);
         }
@@ -93,7 +93,7 @@ const paginate = (products) => {
     updatePagination();
 
     const liElements = documents.querySelectorAll('.pagination-item')
-
+    console.log(documents.querySelectorAll('.pagination-item'))
     const handlePagination = (e) => { 
         const currActiveLi = document.querySelector('.pagination-item.active')
         let newActiveLi;
