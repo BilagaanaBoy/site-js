@@ -89,16 +89,18 @@ const renderProductCards = (products, container) => {
         const card = renderProductCard(e, 'all');
         
         appendProductCard(card, container);
-        // buttonsProductCard(card, container);
+        buttonsProductCard();
     });
 };
 
-const buttonsProductCard = (products, container) => { 
-    products.forEach((e) => {
-        const card = renderProductCard(e, value);
+const buttonsProductCard = () => { 
+    const liElements = document.querySelectorAll('.js-filter-series-ul')
+    console.log(liElements);
+    // products.forEach((e) => {
+    //     const card = renderProductCard(e, value);
         
-        appendProductCard(card, container);
-    });
+    //     appendProductCard(card, container);
+    // });
 }
 
 export {
