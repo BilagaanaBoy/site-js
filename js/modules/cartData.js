@@ -91,7 +91,7 @@ const cartData = () => {
                             <button type="button" class="plus control row jcc aic js-plus">+</button>
                         </div>
                         <div class="row jcc aic">
-                            <span class="cart-price  row jcfe" data-price="${productInfo.price}">${productInfo.price}</span>
+                            <span class="cart-price row jcfe js-cart-price" data-price="${productInfo.price}">${productInfo.price}</span>
                             <span class="rouble">₽</span>
                         </div>
                     </div>
