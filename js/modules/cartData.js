@@ -58,7 +58,6 @@ const cartData = () => {
                 } else {
                     renderProductCard();
                 }
-                renderProductCard();
             }
         })
     }
