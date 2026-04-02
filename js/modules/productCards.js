@@ -89,16 +89,20 @@ const renderProductCards = (products, container) => {
         const card = renderProductCard(e, 'all');
         
         appendProductCard(card, container);
-        buttonsProductCard();
     });
 };
 
 const buttonsProductCard = () => { 
     const liElements = document.querySelector('.js-filter-series-ul')
+    let currLi = document.querySelector('.js-series-item')
+    
     liElements.addEventListener('click', (e) => {
         console.log(e)
+        currLi.classList.remove('active')
+        e.target.classList.add('active')
     })
 }
+buttonsProductCard();
 
 export {
     renderProductCards
