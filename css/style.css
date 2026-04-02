@@ -341,7 +341,7 @@ input[type="number"]::-webkit-outer-spin-button {
     fill: var(--color-second);
 }
 .products .product .image {
-    width: 80%;
+    width: 100%;
 }
 .products .product .title {
     font-weight: 300;
@@ -513,7 +513,7 @@ main .overlay.active {
 }
 .cart .cart-image-container {
     width: 120px;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-right: 10px;
 }
 .cart .cart-img {
