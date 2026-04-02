@@ -3,19 +3,49 @@ const products = [
         id: "ITEMCODE1",
         series: "Case",
         model: "Силиконовый чехол (Розовый)",
-        prices: "5000",
+        prices: "4500",
         photo: "items/case-1-view.jpg",
-        info: "Этот чехол на 45 процентов состоит из переработанного силикона и имеет шелковистую, мягкую на ощупь поверхность, которая приятно лежит в руке. А внутри находится мягкая подкладка из микрофибры для еще большей защиты.",
         like: ''
     },
     {
         id: "ITEMCODE2",
-        series: "Charger",
+        series: "Case",
         model: "Силиконовый чехол - (Желтый)",
-        prices: "5000",
+        prices: "4500",
         photo: "items/case-2-view.jpg",
-        info: "Этот чехол безупречно работает с функцией управления камерой. Он оснащен сапфировым стеклом, соединенным с проводящим слоем, для передачи движений пальцев в функцию управления камерой.",
         like: 'hidden'
+    },
+    {
+        id: "ITEMCODE3",
+        series: "Case",
+        model: "Силиконовый чехол - (Зеленый)",
+        prices: "4500",
+        photo: "items/case-3-view.jpg",
+        like: 'hidden'
+    },
+    {
+        id: "ITEMCODE4",
+        series: "Case",
+        model: "Тканевый чехол - (Синий)",
+        prices: "6000",
+        photo: "items/case-4-view.jpg",
+        like: 'hidden'
+    },
+    {
+        id: "ITEMCODE5",
+        series: "Case",
+        model: "Тканевый чехол - (Оранжевый)",
+        prices: "6000",
+        photo: "items/case-5-view.jpg",
+        like: ''
+    },
+    {
+        id: "ITEMCODE6",
+        series: "Case",
+        model: "Прозрачный чехол",
+        prices: "3000",
+        photo: "items/case-6-view.jpg",
+        like: ''
     },
 
 ];  
