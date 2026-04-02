@@ -88,6 +88,10 @@ const renderProductCards = (products, container, value) => {
     products.forEach((e) => {
         const card = renderProductCard(e, value);
         
+        console.log(card)
+        // if (condition) {
+            
+        // }
         appendProductCard(card, container);
     });
 };
@@ -101,7 +105,7 @@ const buttonsProductCard = (products, container) => {
         console.log(e)
         const productContainer = document.querySelector('.js-products-list');
         productContainer.innerHTML = '';
-        
+
         for (let i = 0; i < currLi.length; i++) {
             currLi[i].classList.remove('active')
         }
