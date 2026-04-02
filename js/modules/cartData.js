@@ -43,7 +43,7 @@ const cartData = () => {
 
     const addProductToCart = () => {
         productsList.addEventListener('click', (e) => {
-            if(!e.target.classList.contains('.js-buy-button')){
+            if(!e.target.classList.contains('js-buy-button')){
                 return;
             }
             if(e.target.classList.contains('js-buy-button')) {
@@ -111,7 +111,7 @@ const cartData = () => {
 
     const removeProductInCart = () => {
         cartList.addEventListener('click', (e) => {
-            if(!e.target.classList.contains('.js-remove')){
+            if(!e.target.classList.contains('js-remove')){
                 return;
             }
             if(e.target.classList.contains('js-remove')){
