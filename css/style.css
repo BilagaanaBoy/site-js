@@ -451,11 +451,14 @@ main .overlay.active {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* HHHHH */
 .cart {
     position: fixed;
     top: 0;
     right: -400px;
-    /* right: 0; */
+
+    right: 0;
+
     width: 400px;
     min-height: 100vh;
     max-height: 100vh;
@@ -566,9 +569,7 @@ main .overlay.active {
 .cart .cart-total-container .rouble {
     font-size: 20px;
 }
-.cart .cart-btn {
-    width: 350px;
-}
+
 .cart .cart-btn .btn-order {
     background-color: var(--color-second);
     letter-spacing: 1px;
@@ -582,6 +583,19 @@ main .overlay.active {
     margin-bottom: 25px;
     cursor: pointer;
     border: none;    
+}
+
+.cart-input {
+    width: stretch;
+    display: grid;
+}
+
+.cart-input-style {
+    height: 25px;
+    padding-left: 20px;
+    border: 1px solid black;
+    border-radius: 100px;
+    margin-bottom: 10px;
 }
 
 /* CART */
