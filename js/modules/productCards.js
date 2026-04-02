@@ -1,5 +1,5 @@
 const renderProductCard = ({id, photo, model, prices, like, series}) => { 
-    if (series == 'Cases') {
+    if (series == 'Case') {
         const li = document.createElement('li');
         li.classList.add('product', 'item', 'column', 'aic', 'js-product');
         li.innerHTML =  `
@@ -24,6 +24,8 @@ const renderProductCard = ({id, photo, model, prices, like, series}) => {
         `;
 
         return li;
+    } else {
+        return
     }
     
     // const li = document.createElement('li');
@@ -62,13 +64,12 @@ const renderProductCards = (products, container) => {
         const card = renderProductCard(e);
         
         appendProductCard(card, container);
-        buttonsProductCard(card, container)
+        // buttonsProductCard(card, container);
     });
 };
 
 const buttonsProductCard = (product, container) => { 
-    console.log(product)
-    console.log(container)
+    renderProductCards(product, container)
 }
 
 export {
