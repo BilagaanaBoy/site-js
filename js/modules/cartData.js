@@ -12,15 +12,15 @@ const cartData = () => {
             }
 
             if (e.target.matches('.js-plus')) {
-                currentItems.textContent = ++currentItem.textContent;
+                currentItems.textContent = ++currentItems.textContent;
                 minusBt.classList.remove('disabled');
             }
 
             if (e.target.matches('.js-minus')) {
                 if (parseInt(currentItems.textContent) > 2) {
-                    currentItems.textContent = --currentItem.textContent;
+                    currentItems.textContent = --currentItems.textContent;
                 } else if (parseInt(currentItems.textContent) === 2) {
-                    currentItems.textContent = --currentItem.textContent;
+                    currentItems.textContent = --currentItems.textContent;
                     minusBt.classList.add('disabled');
                 }
             }
