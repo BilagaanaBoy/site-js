@@ -99,7 +99,9 @@ const buttonsProductCard = (products, container) => {
     
     liElements.addEventListener('click', (e) => {
         console.log(e)
-
+        const productContainer = document.querySelector('.js-products-list');
+        productContainer.innerHTML = '';
+        
         for (let i = 0; i < currLi.length; i++) {
             currLi[i].classList.remove('active')
         }
