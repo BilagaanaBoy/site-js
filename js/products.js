@@ -48,6 +48,39 @@ const products = [
         like: ''
     },
 
+    {
+        id: "ITEMCODE6",
+        series: "Charger",
+        model: "Блок питания",
+        prices: "2000",
+        photo: "items/charger-1-view.jpg",
+        like: ''
+    },
+    {
+        id: "ITEMCODE6",
+        series: "Charger",
+        model: "MagSafe провод (1 m)",
+        prices: "2500",
+        photo: "items/charger-2-view.jpg",
+        like: 'hidden'
+    },
+    {
+        id: "ITEMCODE6",
+        series: "Charger",
+        model: "Провод (usb-c на usb-c)",
+        prices: "1500",
+        photo: "items/charger-3-view.jpg",
+        like: ''
+    },
+    {
+        id: "ITEMCODE6",
+        series: "Charger",
+        model: "Пауэрбанк ",
+        prices: "4000",
+        photo: "items/charger-4-view.jpg",
+        like: 'hidden'
+    },
+
 ];  
 
 
