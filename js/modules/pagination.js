@@ -11,13 +11,8 @@ const paginate = (products) => {
         productContainer.innerHTML = '';
 
         const firstProduct = numOfProd * page - numOfProd;
-        console.log('firstProduct ', firstProduct)
-
         const lastProduct = firstProduct + numOfProd;
-        console.log('lastProduct ', lastProduct)
-
         const productOnPage = products.slice(firstProduct, lastProduct);
-        console.log('productOnPage ', productOnPage)
 
         productOnPage.forEach(({id, photo, model, prices}) => {
             const li = document.createElement('li');
