@@ -69,7 +69,7 @@ const cartData = () => {
         li.classList.add('cart-item', 'column', 'js-cart-item');
 
         li.innerHTML =  `
-            <span class="close"></span>
+            <span class="close js-remove"></span>
             <div class="cartline row jcfs aic" id="${productInfo.id}">
                 <div class="cart-image-container">
                     <img src="${productInfo.photo}" alt="" class="cart-img">
