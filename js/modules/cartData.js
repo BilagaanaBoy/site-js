@@ -48,17 +48,16 @@ const cartData = () => {
                 productInfo.photo = imageCard.src;
                 
                 const productInCart = cartList.querySelector(`#${productInfo.id}`);
-                console.log(productInCart)
 
-                // if (productInCart) {
-                //     const currentItemsProduct = productInCart.querySelector('.js-current-items');
-                //     currentItemsProduct.textContent = parseInt(currentItemsProduct.textContent) + 1;
+                if (productInCart) {
+                    const currentItemsProduct = productInCart.querySelector('.js-current-items');
+                    currentItemsProduct.textContent = parseInt(currentItemsProduct.textContent) + 1;
 
-                //     const minusBt = productInCart.querySelector('.js-minus');
-                //     minusBt.classList.remove('disabled');
-                // } else {
-                //     renderProductCard();
-                // }
+                    const minusBt = productInCart.querySelector('.js-minus');
+                    minusBt.classList.remove('disabled');
+                } else {
+                    renderProductCard();
+                }
                 renderProductCard();
             }
         })
