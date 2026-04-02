@@ -95,12 +95,9 @@ const renderProductCards = (products, container) => {
 
 const buttonsProductCard = () => { 
     const liElements = document.querySelectorAll('.js-filter-series-ul')
-    console.log(liElements);
-    // products.forEach((e) => {
-    //     const card = renderProductCard(e, value);
-        
-    //     appendProductCard(card, container);
-    // });
+    liElements.addEventListener('click', (e) => {
+        console.log(e)
+    })
 }
 
 export {
