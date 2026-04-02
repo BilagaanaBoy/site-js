@@ -92,9 +92,8 @@ const paginate = (products) => {
     renderPagination(products, productCount);
     updatePagination();
 
-    console.log(documents.querySelectorAll('.pagination-item'))
-    const liElements = documents.querySelectorAll('.pagination-item')
-    
+
+    const liElements = document.querySelectorAll('.pagination-item')
     const handlePagination = (e) => { 
         const currActiveLi = document.querySelector('.pagination-item.active')
         let newActiveLi;
