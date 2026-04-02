@@ -2,6 +2,7 @@ const cartData = () => {
     const cart = document.querySelector('.js-cart');
     const productsList = document.querySelector('.js-products-list');
     const cartList = document.querySelector('.js-cart-list');
+    
 
     const productInfo = {};
 
@@ -94,6 +95,16 @@ const cartData = () => {
 
         cartList.append(li);
     }
+
+    const removeProductInCart = () => {
+        cartList.addEventListener('click', (e) => {
+            if(e.target.classList.contains('js-remove')){
+                const cartItem = e.target.closest('.js-cart-item');
+                cartItem.remove();
+            }
+        })
+    }
+    removeProductInCart();
     
 }
 
