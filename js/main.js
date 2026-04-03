@@ -1,6 +1,5 @@
 import products from './products.js';
 import { renderProductCards, buttonsProductCard } from './modules/productCards.js';
-import { paginate } from './modules/pagination.js';
 import { closeCart, openCart } from './modules/cartPopup.js';
 import { cartData } from './modules/cartData.js';
 
